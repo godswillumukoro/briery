@@ -25,4 +25,4 @@ database.once('open', () => console.log('Connected to Mongoose'));
 
 app.use('/', indexController);
 
-app.listen(process.env.port || 5000);
+app.listen(process.env.PORT);
