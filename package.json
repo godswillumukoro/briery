@@ -2,10 +2,10 @@
   "name": "fullstack-simplified",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "npx nodemon server.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "mongoose": "^6.3.3"
   },
   "devDependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
   }
 }
