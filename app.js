@@ -9,6 +9,7 @@ const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');
 const indexController = require('./controllers/index');
 const authorController = require('./controllers/authors');
+const bookController = require('./controllers/books');
 
 mongoose.connect(process.env.DATABASE_URL);
 const database = mongoose.connection;
@@ -25,5 +26,6 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }));
 
 app.use('/', indexController);
 app.use('/authors', authorController);
+app.use('/books', bookController);
 
 app.listen(process.env.PORT);
